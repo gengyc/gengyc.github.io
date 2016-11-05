@@ -1,0 +1,48 @@
+# navbar
+menu:
+  Home: /
+  Archives: /archives/
+  Categories: /categories/
+  # Tags: /tags/
+  About: /about/
+
+# site icon
+favicon: /favicon.ico
+
+# theme styling
+# color: Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
+# headlink: "§"   
+theme:
+  color: Mint Green
+  headerlink: "☻"
+
+# comments
+comments:
+  post: true
+  about: false
+
+# article directory sidebar
+sidebar: true
+
+# Analytics
+## Baidu Analytics
+baidu_analytics: Your baidu Analytics ID
+## Google Analytics
+google_analytics: Your Google Analytics ID
+
+# Comments
+## Duoshuo
+# duoshuo_shortname: gengyc
+## Disqus
+# disqus_shortname: Your disqus ID
+
+# Social links
+social:
+  # email: 272395978@email.com
+  # stack-overflow:
+  # twitter:
+  # facebook:
+  # github: 
+  weibo: http://weibo.com/gengyc85
+  zhihu: https://www.zhihu.com/people/gengyc
+  # rss: /atom.xml
