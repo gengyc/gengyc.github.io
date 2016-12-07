@@ -17,6 +17,7 @@ tags: hexo
 [https://hexo.io/zh-cn/docs/](https://hexo.io/zh-cn/docs/)
 
 安装一些必要的插件：
+
 ```bash
 $  sudo  npm install hexo-deployer-git --save    //安装Git部署器
 $  sudo npm install hexo-generator-index --save 
@@ -35,13 +36,13 @@ $  sudo npm install hexo-generator-sitemap@1 --save
 
 ## GitHub准备工作
 
-1. 在github上新建一个仓库，命名规则为 `git用户名.github.io`。仓库默认有个master分支。
+1.在github上新建一个仓库，命名规则为 `git用户名.github.io`。仓库默认有个master分支。
 
-2. 另新建一个分支 gh_pages，并将此分支设置为 default_branch（默认分支）。
+2.另新建一个分支 gh_pages，并将此分支设置为 default_branch（默认分支）。
 该分支用来存放和管理整个开发项目的代码，我们只需要手动管理gh_pages分支。
 通过 `hexo d` 部署命令会将生成的文件自动提交到master分支。
 
-3. 将GitHub的空项目仓库clone到本地。本地新建一个分支 gh_pages, 切换到这个分支。
+3.将GitHub的空项目仓库clone到本地。本地新建一个分支 gh_pages, 切换到这个分支。
 然后一直在此分支下开发，推送远程的时候也是推送到gh_pages同名远程分支。
 
 ```bash
@@ -83,7 +84,7 @@ $  hexo server   // 可简写为 hexo s
 站点默认链接为 [http://0.0.0.0:4000](http://0.0.0.0:4000)  或 [http://localhost:4000](http://localhost:4000) ，在浏览器打开此地址即可看到站点了。
 保存编辑文章的时候，hexo server 会监听项目文件的改动，而且会自动刷新本地站点页面。
 
-### 2. 新建文章
+#### 2. 新建文章
 
 ```bash
 $  hexo new '文章标题'
@@ -92,7 +93,7 @@ $  hexo new '文章标题'
 会在 source/_posts/ 目录下生成一个新的 markdown 格式的文件。
 在此文件编辑和保存自己的新文章。
 
-### 3. 生成 html  js 站点文件
+#### 3. 生成 html  js 站点文件
 
 ```bash
 $  hexo generate    // 可简写为 hexo g
@@ -100,7 +101,7 @@ $  hexo generate    // 可简写为 hexo g
 
 会在 public 文件夹中生成页面需要的完整的html js等文件。
 
-### 4. 发布
+#### 4. 发布
 
 发布之前，先需要在根目录的 _config.yml 配置文件里关联上你自己的 github 地址。
 
@@ -173,23 +174,19 @@ $  git push origin gh_pages
 
 ## 在新电脑上同步这个项目(包括主题)，步骤：
 
-
-```
+```bash
 $  git clone https://github.com/gengyc/gengyc.github.io
 $  cd gengyc.github.io      // 默认分支为 gh_pages
-
 $  npm install hexo -g
-// 此时不需要在项目根目录运行 hexo init 命令，否则会将所有文件初始化掉。
-$  npm install
-$  hexo s      // 看是否能成功开启本地服务了
-
+$  npm install   // 此时直接运行npm install，不需要在项目根目录运行hexo init命令，否则会将所有文件初始化掉
+$  hexo s        // 看是否能成功开启本地服务了
 $  hexo new 'new article title'
 $  hexo g
 $  hexo d
-
 $  git commit -am 'add hexo files'
 $  git push origin gh_pages
 ```
 
-结束。
+end.
+
 

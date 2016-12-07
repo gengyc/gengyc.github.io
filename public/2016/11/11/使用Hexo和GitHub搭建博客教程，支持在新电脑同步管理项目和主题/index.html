@@ -1,28 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>gyc</title>
-  
-  <link href="/atom.xml" rel="self"/>
-  
-  <link href="http://gengyc.github.io/"/>
-  <updated>2016-12-07T06:54:17.000Z</updated>
-  <id>http://gengyc.github.io/</id>
-  
-  <author>
-    <name>gyc</name>
-    
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>使用Hexo和GitHub搭建博客教程，支持在新电脑同步管理项目和主题</title>
-    <link href="http://gengyc.github.io/2016/11/11/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%EF%BC%8C%E6%94%AF%E6%8C%81%E5%9C%A8%E6%96%B0%E7%94%B5%E8%84%91%E5%90%8C%E6%AD%A5%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%E5%92%8C%E4%B8%BB%E9%A2%98/"/>
-    <id>http://gengyc.github.io/2016/11/11/使用Hexo和GitHub搭建博客教程，支持在新电脑同步管理项目和主题/</id>
-    <published>2016-11-11T02:59:32.000Z</published>
-    <updated>2016-12-07T06:54:17.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>使用 GitHubPages + hexo 可以很便捷地搭建个人博客，githubpages提供 300M 的免费空间，做博客够用了，hexo 是一个静态页面发布框架。<br>下面介绍采用 gitHub + hexo 搭建个人博客，项目代码托管在GitHub，可以在不同电脑管理自己的博客。并且，自己下载的hexo主题也可以同步管理。</p>
+<!DOCTYPE html><html lang="zh-cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="gyc"><meta name="description" content="使用GitHubPages+hexo可以很便捷地搭建个人博客，githubpages提供300M的免费空间，做博客够用了，hexo是一个静态页面发布框架。下面介绍采用gitHub+hexo搭建个人博客，项目代码托管在GitHub，可以在不同电脑管理自己的博客"><meta name="keywords" content="hexo"><title>使用Hexo和GitHub搭建博客教程，支持在新电脑同步管理项目和主题 · gyc</title><link rel="icon" href="/favicon.ico"><link rel="canonical" href="http://gengyc.github.io/2016/11/11/使用Hexo和GitHub搭建博客教程，支持在新电脑同步管理项目和主题/"><link rel="alternate" href="/atom.xml" title="gyc"><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><link rel="stylesheet" href="/css/style.css"><script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?Your baidu Analytics ID";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics ID', 'auto');
+ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">gyc</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">首页</a></li><li class="nav-link"><a href="/archives/" target="_self">归档</a></li><li class="nav-link"><a href="/categories/" target="_self">分类</a></li><li class="nav-link"><a href="/about/" target="_self">关于</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title">使用Hexo和GitHub搭建博客教程，支持在新电脑同步管理项目和主题</h1><span class="post-time">2016年11月11日</span><div id="sidebar" class="post-sidebar"><h3 class="heading">目录</h3><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装环境"><span class="toc-text">安装环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装hexo"><span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub准备工作"><span class="toc-text">GitHub准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo流程"><span class="toc-text">hexo流程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-新建本地站点"><span class="toc-text">1. 新建本地站点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-新建文章"><span class="toc-text">2. 新建文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-生成-html-js-站点文件"><span class="toc-text">3. 生成 html  js 站点文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-发布"><span class="toc-text">4. 发布</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装主题"><span class="toc-text">安装主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推送到远程"><span class="toc-text">推送到远程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在新电脑上同步这个项目-包括主题-，步骤："><span class="toc-text">在新电脑上同步这个项目(包括主题)，步骤：</span></a></li></ol></div><div class="post-content"><p>使用 GitHubPages + hexo 可以很便捷地搭建个人博客，githubpages提供 300M 的免费空间，做博客够用了，hexo 是一个静态页面发布框架。<br>下面介绍采用 gitHub + hexo 搭建个人博客，项目代码托管在GitHub，可以在不同电脑管理自己的博客。并且，自己下载的hexo主题也可以同步管理。</p>
 <a id="more"></a>
 <h2 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h2><p>本地安装git, node</p>
 <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>使用npm安装hexo，官方提供的详细安装方法：<br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a></p>
@@ -57,45 +46,4 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$  git commit -am <span class="string">'add hexo'</span></div><div class="line">$  git push origin gh_pages</div></pre></td></tr></table></figure>
 <h2 id="在新电脑上同步这个项目-包括主题-，步骤："><a href="#在新电脑上同步这个项目-包括主题-，步骤：" class="headerlink" title="在新电脑上同步这个项目(包括主题)，步骤："></a>在新电脑上同步这个项目(包括主题)，步骤：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$  git <span class="built_in">clone</span> https://github.com/gengyc/gengyc.github.io</div><div class="line">$  <span class="built_in">cd</span> gengyc.github.io      // 默认分支为 gh_pages</div><div class="line">$  npm install hexo -g</div><div class="line">$  npm install   // 此时直接运行npm install，不需要在项目根目录运行hexo init命令，否则会将所有文件初始化掉</div><div class="line">$  hexo s        // 看是否能成功开启本地服务了</div><div class="line">$  hexo new <span class="string">'new article title'</span></div><div class="line">$  hexo g</div><div class="line">$  hexo d</div><div class="line">$  git commit -am <span class="string">'add hexo files'</span></div><div class="line">$  git push origin gh_pages</div></pre></td></tr></table></figure>
 <p>end.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;使用 GitHubPages + hexo 可以很便捷地搭建个人博客，githubpages提供 300M 的免费空间，做博客够用了，hexo 是一个静态页面发布框架。&lt;br&gt;下面介绍采用 gitHub + hexo 搭建个人博客，项目代码托管在GitHub，可以在不同电脑管理自己的博客。并且，自己下载的hexo主题也可以同步管理。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://gengyc.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://gengyc.github.io/2016/11/05/hello-world/"/>
-    <id>http://gengyc.github.io/2016/11/05/hello-world/</id>
-    <published>2016-11-05T08:45:04.000Z</published>
-    <updated>2016-11-05T08:45:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-</feed>
+</div></article><div class="tags"><a href="/tags/hexo/">hexo</a></div><div class="paginator"><a href="/2016/11/05/hello-world/" class="next"><span>下一页</span><i class="iconfont icon-right"></i></a></div></section><footer><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">gyc</span></p></div><label id="back2top"><i class="iconfont icon-up"></i></label></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
