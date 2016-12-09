@@ -174,18 +174,19 @@ $  git push origin gh_pages
 
 ## 在新电脑上同步这个项目(包括主题)，步骤：
 
-```bash
+
 $  git clone https://github.com/gengyc/gengyc.github.io
 $  cd gengyc.github.io      // 默认分支为 gh_pages
 $  npm install hexo -g
-$  npm install   // 此时直接运行npm install，不需要在项目根目录运行hexo init命令，否则会将所有文件初始化掉
+// 此时直接运行npm install，不需要在项目根目录运行hexo init命令，否则会将所有文件初始化掉
+$  npm install
 $  hexo s        // 看是否能成功开启本地服务了
 $  hexo new 'new article title'
 $  hexo g
 $  hexo d
 $  git commit -am 'add hexo files'
 $  git push origin gh_pages
-```
+
 
 end.
 

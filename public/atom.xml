@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://gengyc.github.io/"/>
-  <updated>2016-12-07T06:54:17.000Z</updated>
+  <updated>2016-12-09T02:23:31.000Z</updated>
   <id>http://gengyc.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://gengyc.github.io/2016/11/11/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%EF%BC%8C%E6%94%AF%E6%8C%81%E5%9C%A8%E6%96%B0%E7%94%B5%E8%84%91%E5%90%8C%E6%AD%A5%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%E5%92%8C%E4%B8%BB%E9%A2%98/"/>
     <id>http://gengyc.github.io/2016/11/11/使用Hexo和GitHub搭建博客教程，支持在新电脑同步管理项目和主题/</id>
     <published>2016-11-11T02:59:32.000Z</published>
-    <updated>2016-12-07T06:54:17.000Z</updated>
+    <updated>2016-12-09T02:23:31.000Z</updated>
     
     <content type="html"><![CDATA[<p>使用 GitHubPages + hexo 可以很便捷地搭建个人博客，githubpages提供 300M 的免费空间，做博客够用了，hexo 是一个静态页面发布框架。<br>下面介绍采用 gitHub + hexo 搭建个人博客，项目代码托管在GitHub，可以在不同电脑管理自己的博客。并且，自己下载的hexo主题也可以同步管理。</p>
 <a id="more"></a>
@@ -55,7 +55,7 @@
 <p>然后 /themes/even 下的文件就可以被 git 跟踪到了。</p>
 <h2 id="推送到远程"><a href="#推送到远程" class="headerlink" title="推送到远程"></a>推送到远程</h2><p>文章发布完后，我们把本地仓库推送到远程仓库的 gh_pages 分支。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$  git commit -am <span class="string">'add hexo'</span></div><div class="line">$  git push origin gh_pages</div></pre></td></tr></table></figure>
-<h2 id="在新电脑上同步这个项目-包括主题-，步骤："><a href="#在新电脑上同步这个项目-包括主题-，步骤：" class="headerlink" title="在新电脑上同步这个项目(包括主题)，步骤："></a>在新电脑上同步这个项目(包括主题)，步骤：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$  git <span class="built_in">clone</span> https://github.com/gengyc/gengyc.github.io</div><div class="line">$  <span class="built_in">cd</span> gengyc.github.io      // 默认分支为 gh_pages</div><div class="line">$  npm install hexo -g</div><div class="line">$  npm install   // 此时直接运行npm install，不需要在项目根目录运行hexo init命令，否则会将所有文件初始化掉</div><div class="line">$  hexo s        // 看是否能成功开启本地服务了</div><div class="line">$  hexo new <span class="string">'new article title'</span></div><div class="line">$  hexo g</div><div class="line">$  hexo d</div><div class="line">$  git commit -am <span class="string">'add hexo files'</span></div><div class="line">$  git push origin gh_pages</div></pre></td></tr></table></figure>
+<h2 id="在新电脑上同步这个项目-包括主题-，步骤："><a href="#在新电脑上同步这个项目-包括主题-，步骤：" class="headerlink" title="在新电脑上同步这个项目(包括主题)，步骤："></a>在新电脑上同步这个项目(包括主题)，步骤：</h2><p>$  git clone <a href="https://github.com/gengyc/gengyc.github.io" target="_blank" rel="external">https://github.com/gengyc/gengyc.github.io</a><br>$  cd gengyc.github.io      // 默认分支为 gh_pages<br>$  npm install hexo -g<br>// 此时直接运行npm install，不需要在项目根目录运行hexo init命令，否则会将所有文件初始化掉<br>$  npm install<br>$  hexo s        // 看是否能成功开启本地服务了<br>$  hexo new ‘new article title’<br>$  hexo g<br>$  hexo d<br>$  git commit -am ‘add hexo files’<br>$  git push origin gh_pages</p>
 <p>end.</p>
 ]]></content>
     
