@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://gengyc.github.io/"/>
-  <updated>2016-12-09T02:23:31.000Z</updated>
+  <updated>2016-12-09T02:43:17.000Z</updated>
   <id>http://gengyc.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://gengyc.github.io/2016/11/11/%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B%EF%BC%8C%E6%94%AF%E6%8C%81%E5%9C%A8%E6%96%B0%E7%94%B5%E8%84%91%E5%90%8C%E6%AD%A5%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%E5%92%8C%E4%B8%BB%E9%A2%98/"/>
     <id>http://gengyc.github.io/2016/11/11/使用Hexo和GitHub搭建博客教程，支持在新电脑同步管理项目和主题/</id>
     <published>2016-11-11T02:59:32.000Z</published>
-    <updated>2016-12-09T02:23:31.000Z</updated>
+    <updated>2016-12-09T02:43:17.000Z</updated>
     
     <content type="html"><![CDATA[<p>使用 GitHubPages + hexo 可以很便捷地搭建个人博客，githubpages提供 300M 的免费空间，做博客够用了，hexo 是一个静态页面发布框架。<br>下面介绍采用 gitHub + hexo 搭建个人博客，项目代码托管在GitHub，可以在不同电脑管理自己的博客。并且，自己下载的hexo主题也可以同步管理。</p>
 <a id="more"></a>
